@@ -1,9 +1,28 @@
+document.addEventListener("DOMContentLoaded", function() {
+    var messageInput = document.getElementById("message-input");
+
+    // Добавляем обработчик событий для поля ввода сообщения при загрузке страницы
+    messageInput.addEventListener("keydown", function(event) {
+        if (event.key === "Enter") {
+            sendMessage(); // Вызываем функцию отправки сообщения
+        }
+    });
+    
+});
+
 function sendMessage() {
     var messageInput = document.getElementById("message-input");
     var message = messageInput.value;
     if (message.trim() === "") {
         return;
     }
+   // Добавление обработчика событий для события keydown
+    messageInput.addEventListener("keydown", function(event) {
+    // Проверка, нажата ли клавиша Enter
+    if (event.key === "Enter") {
+        sendMessage(); // Вызываем функцию отправки сообщения
+    }
+    });
 
     var chatBox = document.getElementById("chat-box");
     var messageContainer = document.createElement("div"); // Создаем контейнер для сообщения
@@ -38,3 +57,13 @@ function sendMessage() {
     // Прокрутить вниз, чтобы видеть последнее сообщение
     chatBox.scrollTop = chatBox.scrollHeight;
 }
+
+$(window).ready(function(){
+    $(".boton").wrapInner('<div class=botontext></div>');
+        
+        $(".botontext").clone().appendTo( $(".boton") );
+        
+        $(".boton").append('<span class="twist"></span><span class="twist"></span><span class="twist"></span><span class="twist"></span>');
+        
+        $(".twist").css("width", "25%").css("width", "+=3px");
+    });
