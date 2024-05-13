@@ -1,0 +1,335 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+
+/* Container */
+
+.container {
+    width: 100%;
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+
+/* Intro */
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.intro__inner {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Rubik+One&subset=latin,cyrillic);
+.intro__title {
+    font-family: 'Rubik One', sans-serif;
+    font-size: 150px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #087777;
+    text-shadow: 0 0 5px #FFFFFF, 0 0 10px #FFFFFF, 0 0 15px #FFFFFF, 0 0 20px #FFFFFF;
+    display: table;
+    margin: 20px auto;
+    line-height: 1;
+}
+
+
+/*.intro__title {
+    color: #fff;
+    font-size: 150px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+}*/
+
+.intro__title:after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 3px;
+    margin: 10px auto;
+    background-color: #fff;
+}
+
+.intro__suptitle {
+    margin-bottom: 20px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 72px;
+    color: #fff;
+}
+
+
+/* Header */
+
+.header {
+    width: 100%;
+    padding-top: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/*
+.header__logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}*/
+
+.header__logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 0 5px #084545, 0 0 10px #084545, 0 0 15px #084545, 0 0 20px #084545;
+}
+
+.colortext {
+    color: #087777;
+    /* Красный цвет выделения */
+}
+
+
+/* Nav */
+
+.nav {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    transition: color .1s linear;
+}
+
+.nav__link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #084545;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    transition: opacity .1s linear;
+}
+
+.nav__link:hover {
+    font-size: 15px;
+    color: #fff;
+    text-shadow: 0 0 5px #084545, 0 0 10px #084545, 0 0 15px #084545, 0 0 20px #084545;
+}
+
+.nav__link:hover:after,
+.nav__link.active:after {
+    opacity: 1;
+}
+
+.nav__link.active {
+    font-size: 15px;
+    color: #fff;
+    text-shadow: 0 0 5px #084545, 0 0 10px #084545, 0 0 15px #084545, 0 0 20px #084545;
+}
+
+.bg-img {
+    width: 100%;
+    position: absolute;
+    background: url("../images/intro.jpg") center/cover no-repeat;
+    background-attachment: fixed;
+}
+
+.section-1 {
+  height: 1200px;
+  position: relative;
+}
+
+.section-1__rectangle {
+    width: 1057px;
+    height: 1024px;
+    position: absolute;
+    background: url("../images/rectangle_transparent.png");
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    opacity: 1;
+    z-index: 1;
+}
+
+.figures_1 {
+    width: 338px;
+    height: 434px;
+    position: absolute;
+    left: -100px;
+    top: -120px;
+    background: url("../images/figures_1.png");
+    opacity: 1;
+    z-index: 2;
+}
+
+.figures_2 {
+    width: 414px;
+    height: 388px;
+    position: absolute;
+    background: url("../images/figures_2.png");
+    right: -170px;
+    bottom: -70px;
+    z-index: 3;
+}
+
+.botion_ico {
+    width: 375px;
+    height: 375px;
+    position: absolute;
+    background: url("../images/botion_ico.png");
+    right: -170px;
+    top: -100px;
+    z-index: 4;
+}
+
+.computer {
+    width: 1030px;
+    height: 775px;
+    position: absolute;
+    background: url("../images/computer.png");
+    top: 150px;
+    left: 13.5px;
+    z-index: 4;
+}
+
+/*CHAT*/
+.chat-container {
+
+    margin: 0 auto;
+    padding: 30px;
+    border: 2px solid #ccc;
+    background: url("../images/rectangle_transparent.png");
+    border-radius: 5px;
+    max-width: none; /* Убедиться, что нет ограничения максимальной ширины */
+    max-height: none; /* Убедиться, что нет ограничения максимальной высоты */
+    overflow: visible; /* Убедиться, что нет прокрутки */
+}
+
+.chat-box {
+    height: 650px;
+    
+    overflow-y: scroll;
+
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+.message-date {
+    font-size: 10px; /* Устанавливаем меньший размер шрифта */
+    color: #ffffff; /* Устанавливаем другой цвет текста */
+}
+
+input[type="text"] {
+    width: calc(100% - 100px);
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 90px;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.message {
+    background-color: #f0f0f0;
+    padding: 8px 12px;
+    margin: 6px 0;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.message:nth-child(even) {
+    background-color: #d3d3d3;
+}
+
+
+
+@media (max-width: 1290px) {
+    /*Intro*/
+    .intro__suptitle {
+        font-size: 42px;
+    }
+    .intro__title {
+        font-size: 110px;
+    }
+}
+
+@media (max-width :990px) {
+    /*Intro*/
+    .intro__suptitle {
+        font-size: 32px;
+    }
+    .intro__title {
+        font-size: 80px;
+    }
+}
+
+@media (max-width :650px) {
+    /*Intro*/
+    .intro__suptitle {
+        font-size: 22px;
+    }
+    .intro__title {
+        font-size: 40px;
+    }
+}
