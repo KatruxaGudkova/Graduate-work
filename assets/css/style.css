@@ -430,6 +430,113 @@ input[type="text"] {
     z-index: 0;
 }
 
+/*TASK*/
+
+
+.task__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+    padding: 0px 50px 90px 110px;;
+}
+.task__blok {
+
+    max-width: 1230px;
+    padding: 10px 50px 30px 0;
+    margin: 0px 50px 0px 130px;
+
+}
+
+.task__inner {
+
+    max-width: 1324px;
+    margin: 0 auto;
+    text-align: left;
+
+}
+
+@import url(https://fonts.googleapis.com/css?family=Rubik+One&subset=latin,cyrillic);
+.task__title {
+    font-family: 'Rubik One', sans-serif;
+    font-size: 96px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #087777;
+    text-shadow: 0 0 5px #FFFFFF, 0 0 10px #FFFFFF, 0 0 15px #FFFFFF, 0 0 20px #FFFFFF;
+    display: table;
+    margin: 20px auto;
+    line-height: 1;
+}
+
+.task__title:after {
+    content: "";
+    display: block;
+    width: 900px;
+    height: 4px;
+    margin: 10px 190px;
+    background-color: #fff;
+}
+/*BLOK_INFO*/
+
+@import url(https://fonts.googleapis.com/css?family=Rubik+One&subset=latin,cyrillic);
+.task__sup {
+    font-family: 'Rubik One', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #087777;
+    text-shadow: 0 0 5px #FFFFFF, 0 0 10px #FFFFFF, 0 0 15px #FFFFFF, 0 0 20px #FFFFFF;
+    display: table;
+    margin: 10px 0px 0px 0px;
+    line-height: 1;
+}
+
+.task__sup:after {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 2px;
+    margin: 10px 0px 0px 0px;
+    background-color: #fff;
+}
+
+.task__blok__info {
+    height: 724px;
+    max-width: 1110px;
+    padding: 0px 50px 30px 30px;
+    margin: 0px 50px 30px 130px;
+    background: url("../images/rectangle_transparent.png");
+
+}
+
+.task__inner__info {
+    
+    max-width: 1324px;
+    margin: 0 auto;
+    text-align: left;
+
+}
+
+.task__suptitle {
+    margin-bottom: 20px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 32px;
+
+    color: #fff;
+}
+.figures_3 {
+    width: 323px;
+    height: 529.08px;
+    position: absolute;
+    background: url("../images/figures_3.png");
+    right: 400px;
+    bottom: 40px;
+
+    z-index: 3;
+}
 
 @media (max-width: 1290px) {
     /*Intro*/
