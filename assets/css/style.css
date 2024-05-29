@@ -549,7 +549,7 @@ input[type="text"] {
     justify-content: center;
     width: 100%;
     height: 100vh;
-
+  
 
 
 }
@@ -558,11 +558,12 @@ input[type="text"] {
     max-width: 1230px;
 
     margin: 0px auto;
+   
 
 }
 
 .relevance__inner {
-
+   
     max-width: 1324px;
     margin: 0 auto;
     text-align: left;
@@ -604,24 +605,25 @@ input[type="text"] {
     text-shadow: 0 0 5px #FFFFFF, 0 0 10px #FFFFFF, 0 0 15px #FFFFFF, 0 0 20px #FFFFFF;
     display: table;
     margin: 0px auto;
-    line-height: 1;
     text-align: center;
+    transform: translate(0px, -550px);
+   
 }
 
 .relevance__sup:after {
     content: "";
     display: block;
-
-    height: 2px;
     margin: 0px auto;
     background-color: #fff;
     text-align: center;
+    transform: translate(0px, -550px);
+  
 }
 
 .relevance__blok__info {
     height: 724px;
     position: relative;
-
+   
     width: 1110px;
     margin: 0px auto;
     background: url("../images/rectangle_transparent.png");
@@ -629,148 +631,307 @@ input[type="text"] {
 }
 
 .relevance__inner__info {
-
+    height: 724px;
     max-width: 350px;
-    margin: 346px auto;
+    margin: 0px auto;
     text-align: center;
-
+   
 }
 
 .relevance__suptitle {
     margin-bottom: 20px;
     font-family: 'Kaushan Script', cursive;
     font-size: 32px;
-
+  
     color: #fff;
 }
 
 .analysis {
-    width: 125px;
-    height: 176px;
-    position: absolute;
-    left: 250px;
-    top: 450px;
-    background: url("../images/analysis.png");
+    width: 200px; /* Set your desired width */
+    height: 200px; /* Set your desired height */
+    display: inline-block;
+    position: relative;
+    top: 420px; /* Перемещение вверх на 20px */
+    left: -320px;
+  
+  }
 
-    transition: box-shadow 0.1s ease;
-    z-index: 2;
+  .analysis_text{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 32px;
+    color: #fff;
+  
+    
+  }
+  .icon {
+    width: 100%;
+    height: 100%;
+    pointer-events: all;
+    transition: filter 0.3s ease;
+  
+  }
+  
+  .analysis:hover .icon {
+    filter: drop-shadow(0 0 10px rgb(0, 255, 221)); /* Adjust color and size as needed */
+    top: 400px; /* Перемещение вверх на 20px */
+    left: -290px;
 }
-.analysis:hover {
-    width: 125px;
-    height: 176px;
+.analysis_line{
     position: absolute;
-    left: 250px;
-    top: 450px;
-    background: url("../images/analysis.png");
-
-    box-shadow: 0 0 10px 5px rgba(129,230,217,1); /* Подсветка жёлтым светом */
-    z-index: 2;
+    top: 380px; /* Перемещение вверх на 20px */
+    left: 290px;
 }
-
-
+.companies_line{
+    position: absolute;
+    top: 200px; /* Перемещение вверх на 20px */
+    left: 290px;
+}
+.news_line{
+    position: absolute;
+    top: 350px; /* Перемещение вверх на 20px */
+    left: 700px;
+}
+.education_line{
+    position: absolute;
+    top: 200px; /* Перемещение вверх на 20px */
+    left: 520px;
+}
+.translation_line{
+    position: absolute;
+    top: 380px; /* Перемещение вверх на 20px */
+    left: 520px;
+}
+.purchases_line{
+    position: absolute;
+    top: 200px; /* Перемещение вверх на 20px */
+    left: 700px;
+} 
 .companies {
-    width: 125px;
-    height: 153px;
-    position: absolute;
-    background: url("../images/companies.png");
-    left: 120px;
-    top: 200px;
-    transition: box-shadow 0.1s ease;
-    z-index: 3;
-}
-.companies:hover {
-    width: 125px;
-    height: 153px;
-    position: absolute;
-    background: url("../images/companies.png");
-    left: 120px;
-    top: 200px;
-    box-shadow: 0 0 10px 5px rgba(129,230,217,1); /* Подсветка жёлтым светом */
-    z-index: 3;
+    width: 150px; /* Set your desired width */
+    height: 150px; /* Set your desired height */
+    display: inline-block;
+    position: relative;
+    top: -170px; /* Перемещение вверх на 20px */
+    left: -240px;
+  }
+
+  .companies_text{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 32px;
+    color: #fff;
+    
+  }
+
+  
+  .companies:hover .icon {
+    filter: drop-shadow(0 0 10px rgb(0, 255, 221)); /* Adjust color and size as needed */
+    top: -150px; /* Перемещение вверх на 20px */
+    left: -300px;
 }
 
 .news {
-    width: 125px;
-    height: 153px;
-    position: absolute;
-    background: url("../images/news.png");
-    right: 140px;
-    top: 310px;
-    transition: box-shadow 0.1s ease;
-    z-index: 4;
-}
-.news:hover {
-    width: 125px;
-    height: 153px;
-    position: absolute;
-    background: url("../images/news.png");
-    right: 140px;
-    top: 310px;
-    box-shadow: 0 0 10px 5px rgba(129,230,217,1); /* Подсветка жёлтым светом */
-    z-index: 4;
+    width: 150px; /* Set your desired width */
+    height: 150px; /* Set your desired height */
+    display: inline-block;
+    position: relative;
+    top: 170px; /* Перемещение вверх на 20px */
+    right: -250px;
+  }
+
+  .news_text{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 32px;
+    color: #fff;
+    
+  }
+
+  
+  .news:hover .icon {
+    filter: drop-shadow(0 0 10px rgb(0, 255, 221)); /* Adjust color and size as needed */
+    top: 170px; /* Перемещение вверх на 20px */
+    right: -250px;
 }
 
 .education {
-    width: 125px;
-    height: 153px;
-    position: absolute;
-    background: url("../images/education.png");
-    top: 90px;
-    left: 400px;
-    transition: box-shadow 0.1s ease;
-    z-index: 4;
-}
-.education:hover {
-    width: 125px;
-    height: 153px;
-    position: absolute;
-    background: url("../images/education.png");
-    top: 90px;
-    left: 400px;
-    box-shadow: 0 0 10px 5px rgba(129,230,217,1); /* Подсветка жёлтым светом */
-    z-index: 4;
+    width: 150px; /* Set your desired width */
+    height: 150px; /* Set your desired height */
+    display: inline-block;
+    position: relative;
+    top: -450px; /* Перемещение вверх на 20px */
+    right: -65px;
+
+  }
+
+  .education_text{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 32px;
+    color: #fff;
+    
+  }
+
+  
+  .education:hover .icon {
+    filter: drop-shadow(0 0 10px rgb(0, 255, 221)); /* Adjust color and size as needed */
+    top: -410px; /* Перемещение вверх на 20px */
+    right: -40px;
 }
 .translation {
-    width: 125px;
-    height: 158px;
-    position: absolute;
-    background: url("../images/translation.png");
-    top: 500px;
-    left: 600px;
-    transition: box-shadow 0.1s ease;
-    z-index: 4;
+    width: 130px; /* Set your desired width */
+    height: 130px; /* Set your desired height */
+    display: inline-block;
+    position: relative;
+    top: 50px; /* Перемещение вверх на 20px */
+    right: 75px;
+
+  }
+
+  .translation_text{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 32px;
+    color: #fff;
+    
+  }
+
+  .translation:hover .icon {
+    filter: drop-shadow(0 0 10px rgb(0, 255, 221));   /* Adjust color and size as needed */
+    top: 50px; /* Перемещение вверх на 20px */
+    right: 75px;
 }
-.translation:hover {
-    width: 125px;
-    height: 158px;
-    position: absolute;
-    background: url("../images/translation.png");
-    top: 500px;
-    left: 600px;
-    box-shadow: 0 0 10px 5px rgba(129,230,217,1); /* Подсветка жёлтым светом */
-    z-index: 4;
-}
-.purchases {
-    width: 117px;
-    height: 149px;
-    position: absolute;
-    background: url("../images/purchases.png");
-    top: 100px;
-    right: 270px;
-    transition: box-shadow 0.1s ease; /* Плавный переход */
-    z-index: 4;
-}
-.purchases:hover {
-    width: 117px;
-    height: 149px;
-    position: absolute;
-    background: url("../images/purchases.png");
-    top: 100px;
-    right: 270px;
-    box-shadow: 0 0 10px 5px rgba(129,230,217,1); /* Подсветка жёлтым светом */
-    z-index: 4;
+.purchases{
+    width: 150px; /* Set your desired width */
+    height: 150px; /* Set your desired height */
+    display: inline-block;
+    position: relative;
+    top: -590px; /* Перемещение вверх на 20px */
+    right: -330px;
+
+  }
+
+  .purchases_text{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 32px;
+    color: #fff;
+    
+  }
+
+  
+  .purchases:hover .icon {
+    filter: drop-shadow(0 0 10px rgb(0, 255, 221)); /* Adjust color and size as needed */
+    top: -590px; /* Перемещение вверх на 20px */
+    right: -330px;
 }
 
+  /*MODEL*/
+
+  
+.model__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 220vh;
+    border: 3px solid red;
+    padding: 0px 50px 90px 110px;;
+}
+.model__blok {
+    border: 3px solid rgb(255, 200, 0);
+    max-width: 1230px;
+    padding: 10px 50px 30px 0;
+    margin: 0px 50px 0px 130px;
+
+}
+
+.model__inner {
+    border: 3px solid rgb(238, 255, 0);
+    max-width: 1324px;
+    margin: 0 auto;
+    text-align: left;
+
+}
+
+@import url(https://fonts.googleapis.com/css?family=Rubik+One&subset=latin,cyrillic);
+.model__title {
+    font-family: 'Rubik One', sans-serif;
+    font-size: 96px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #087777;
+    text-shadow: 0 0 5px #FFFFFF, 0 0 10px #FFFFFF, 0 0 15px #FFFFFF, 0 0 20px #FFFFFF;
+    display: table;
+    margin: 20px auto;
+    line-height: 1;
+    border: 3px solid rgb(64, 255, 0);
+}
+
+.model__title:after {
+    content: "";
+    display: block;
+    width: 900px;
+    height: 4px;
+    margin: 10px 190px;
+    border: 3px solid rgb(64, 255, 0);
+
+    background-color: #fff;
+}
+/*BLOK_INFO*/
+
+@import url(https://fonts.googleapis.com/css?family=Rubik+One&subset=latin,cyrillic);
+.model__sup {
+    font-family: 'Rubik One', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #087777;
+    text-shadow: 0 0 5px #FFFFFF, 0 0 10px #FFFFFF, 0 0 15px #FFFFFF, 0 0 20px #FFFFFF;
+    display: table;
+    margin: 10px 0px 0px 0px;
+    border: 3px solid rgb(0, 255, 204);
+
+    line-height: 1;
+}
+
+.model__sup:after {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 2px;
+    margin: 10px 0px 0px 0px;
+    background-color: #fff;
+    border: 3px solid rgb(0, 255, 204);
+
+}
+
+.model__blok__info {
+    height: 1448px;
+    max-width: 1110px;
+    padding: 0px 50px 30px 30px;
+    margin: 0px 50px 30px 130px;
+    border: 3px solid rgb(17, 0, 255);
+
+    background: url("../images/rectangle_transparent.png");
+
+}
+
+.model__inner__info {
+    
+    max-width: 1324px;
+    border: 3px solid rgb(136, 0, 255);
+
+    margin: 0 auto;
+    text-align: left;
+
+}
+
+.model__suptitle {
+    border: 3px solid rgb(255, 0, 119);
+
+    margin-bottom: 20px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 32px;
+
+    color: #fff;
+}
 
 @media (max-width: 1290px) {
     /*Intro*/
